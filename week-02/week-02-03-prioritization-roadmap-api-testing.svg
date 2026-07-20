@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef4f8"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.14"/></filter>
+    <marker id="arrowHead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 z" fill="#003057"/></marker>
+    <style>
+      .title{font-family:Helvetica,Arial,sans-serif;font-size:44px;font-weight:700;fill:#111827}
+      .subtitle{font-family:Helvetica,Arial,sans-serif;font-size:22px;font-weight:600;fill:#52616f}
+      .section{font-family:Helvetica,Arial,sans-serif;font-size:30px;font-weight:700;fill:#111827}
+      .label{font-family:Helvetica,Arial,sans-serif;font-size:22px;font-weight:700;fill:#111827}
+      .small{font-family:Helvetica,Arial,sans-serif;font-size:18px;fill:#334155}
+      .tiny{font-family:Helvetica,Arial,sans-serif;font-size:15px;fill:#475569}
+      .card{fill:#fff;stroke:#d6dee6;stroke-width:2;filter:url(#shadow)}
+      .arrow{stroke:#003057;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;fill:none;marker-end:url(#arrowHead)}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="834" width="1600" height="66" fill="#003057"/>
+  <polygon points="54,812 190,812 118,884" fill="#ffc72c" opacity="0.95"/>
+  <text x="78" y="92" class="title">Prioritize, Plan, Build, Test</text>
+  <text x="80" y="130" class="subtitle">From backlog decisions to verified API behavior</text>
+  
+  <rect x="70" y="190" width="410" height="560" rx="22" class="card"/>
+  <text x="115" y="260" class="section">Priority Matrix</text>
+  <line x1="135" y1="600" x2="430" y2="600" stroke="#cbd5e1" stroke-width="3"/><line x1="135" y1="600" x2="135" y2="330" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="150" y="632" class="tiny">Low Effort</text><text x="335" y="632" class="tiny">High Effort</text><text x="85" y="445" class="tiny" transform="rotate(-90 85 445)">High Value</text>
+  <circle cx="200" cy="385" r="42" fill="#4ade80" opacity="0.9"/><text x="174" y="393" class="label">Must</text>
+  <circle cx="330" cy="430" r="42" fill="#fbbf24" opacity="0.9"/><text x="304" y="438" class="label">Should</text>
+  <circle cx="240" cy="540" r="42" fill="#93c5fd" opacity="0.9"/><text x="220" y="548" class="label">Could</text>
+  <circle cx="385" cy="555" r="42" fill="#fca5a5" opacity="0.9"/><text x="358" y="563" class="label">Won't</text>
+  <text x="112" y="705" class="small">Rank by value, risk, and capacity.</text>
+
+  <rect x="580" y="190" width="430" height="560" rx="22" class="card"/>
+  <text x="625" y="260" class="section">Sprint Schedule</text>
+  <line x1="650" y1="365" x2="940" y2="365" stroke="#003057" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="660" cy="365" r="18" fill="#ffc72c"/><text x="625" y="414" class="tiny">Interview</text>
+  <circle cx="755" cy="365" r="18" fill="#ffc72c"/><text x="720" y="414" class="tiny">Prototype</text>
+  <circle cx="850" cy="365" r="18" fill="#ffc72c"/><text x="830" y="414" class="tiny">PRD</text>
+  <circle cx="940" cy="365" r="18" fill="#ffc72c"/><text x="908" y="414" class="tiny">API Spec</text>
+  <rect x="630" y="500" width="330" height="56" rx="12" fill="#eff6ff"/><text x="655" y="536" class="small">Sprint Goal: validate checkout</text>
+  <rect x="630" y="585" width="330" height="56" rx="12" fill="#f0fdf4"/><text x="655" y="621" class="small">Ready: AC + API contract</text>
+  <rect x="630" y="670" width="330" height="40" rx="10" fill="#fef3c7"/><text x="655" y="696" class="tiny">Risk buffer: 20% clarification time</text>
+
+  <rect x="1100" y="190" width="420" height="560" rx="22" class="card"/>
+  <text x="1145" y="260" class="section">API Build &amp; Test</text>
+  <rect x="1175" y="320" width="270" height="60" rx="14" fill="#e0f2fe" stroke="#38bdf8" stroke-width="2"/><text x="1210" y="358" class="small">OpenAPI Contract</text>
+  <path d="M1310 390 L1310 430" class="arrow"/>
+  <rect x="1175" y="440" width="270" height="60" rx="14" fill="#dcfce7" stroke="#4ade80" stroke-width="2"/><text x="1220" y="478" class="small">Implementation</text>
+  <path d="M1310 510 L1310 550" class="arrow"/>
+  <rect x="1175" y="560" width="270" height="60" rx="14" fill="#fef3c7" stroke="#fbbf24" stroke-width="2"/><text x="1252" y="598" class="small">API Tests</text>
+  <path d="M1310 630 L1310 670" class="arrow"/>
+  <rect x="1175" y="680" width="270" height="48" rx="14" fill="#003057"/><text x="1240" y="711" font-family="Helvetica,Arial" font-size="21" font-weight="700" fill="#fff">Verified</text>
+  <path d="M490 470 C520 470,542 470,570 470" class="arrow"/><path d="M1022 470 C1052 470,1070 470,1090 470" class="arrow"/>
+  <text x="1090" y="872" font-family="Helvetica,Arial" font-size="20" fill="#fff">Prioritize · Plan · Contract · Implement · Test</text>
+
+</svg>

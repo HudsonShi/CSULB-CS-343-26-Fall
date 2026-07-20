@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef4f8"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.14"/></filter>
+    <marker id="arrowHead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 z" fill="#003057"/></marker>
+    <style>
+      .title{font-family:Helvetica,Arial,sans-serif;font-size:44px;font-weight:700;fill:#111827}
+      .subtitle{font-family:Helvetica,Arial,sans-serif;font-size:22px;font-weight:600;fill:#52616f}
+      .section{font-family:Helvetica,Arial,sans-serif;font-size:30px;font-weight:700;fill:#111827}
+      .label{font-family:Helvetica,Arial,sans-serif;font-size:22px;font-weight:700;fill:#111827}
+      .small{font-family:Helvetica,Arial,sans-serif;font-size:18px;fill:#334155}
+      .tiny{font-family:Helvetica,Arial,sans-serif;font-size:15px;fill:#475569}
+      .card{fill:#fff;stroke:#d6dee6;stroke-width:2;filter:url(#shadow)}
+      .arrow{stroke:#003057;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;fill:none;marker-end:url(#arrowHead)}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="834" width="1600" height="66" fill="#003057"/>
+  <polygon points="54,812 190,812 118,884" fill="#ffc72c" opacity="0.95"/>
+  <text x="78" y="92" class="title">Requirements Discovery</text>
+  <text x="80" y="130" class="subtitle">Product manager analysis: persona, user needs, and INVEST-ready user stories</text>
+  
+  <rect x="70" y="190" width="420" height="560" rx="22" class="card"/>
+  <circle cx="160" cy="295" r="54" fill="#ffc72c"/><circle cx="160" cy="278" r="22" fill="#003057"/><path d="M112 354 C128 324,192 324,208 354" fill="#003057"/>
+  <text x="245" y="278" class="section">Persona</text><text x="245" y="316" class="label">Maya Chen</text><text x="245" y="346" class="small">Junior CS student</text>
+  <text x="112" y="430" class="label">Goals</text><text x="132" y="466" class="small">• Find materials quickly</text><text x="132" y="496" class="small">• Submit assignments confidently</text><text x="132" y="526" class="small">• Track deadlines across classes</text>
+  <text x="112" y="595" class="label">Pain Points</text><text x="132" y="631" class="small">• Vague instructions</text><text x="132" y="661" class="small">• Missing API examples</text><text x="132" y="691" class="small">• Late clarification</text>
+
+  <rect x="590" y="190" width="380" height="560" rx="22" class="card"/>
+  <text x="635" y="260" class="section">User Needs</text>
+  <path d="M655 320 L905 320 L865 410 L695 410 Z" fill="#e0f2fe" stroke="#38bdf8" stroke-width="3"/><text x="730" y="375" class="label">Observe</text>
+  <path d="M695 440 L865 440 L835 520 L725 520 Z" fill="#dcfce7" stroke="#4ade80" stroke-width="3"/><text x="744" y="489" class="label">Interview</text>
+  <path d="M725 550 L835 550 L810 630 L750 630 Z" fill="#fef3c7" stroke="#fbbf24" stroke-width="3"/><text x="748" y="599" class="label">Prioritize</text>
+  <text x="635" y="690" class="small">Evidence-based needs:</text><text x="655" y="720" class="small">• Fast checkout</text><text x="655" y="748" class="small">• Clear errors</text>
+
+  <rect x="1080" y="190" width="420" height="560" rx="22" class="card"/>
+  <text x="1130" y="260" class="section">User Stories</text>
+  <rect x="1130" y="315" width="315" height="78" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/><text x="1150" y="347" class="small">As a customer, I want to</text><text x="1150" y="374" class="small">review my cart before paying.</text>
+  <rect x="1130" y="425" width="315" height="78" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/><text x="1150" y="457" class="small">As a student, I want clear</text><text x="1150" y="484" class="small">acceptance criteria per task.</text>
+  <rect x="1130" y="535" width="315" height="78" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/><text x="1150" y="567" class="small">As an API consumer, I want</text><text x="1150" y="594" class="small">predictable error responses.</text>
+  <text x="1130" y="675" class="label">INVEST Check</text><text x="1150" y="710" class="small">Independent • Valuable • Testable</text>
+  <path d="M500 470 C530 470,550 470,580 470" class="arrow"/><path d="M980 470 C1010 470,1034 470,1070 470" class="arrow"/>
+  <text x="1088" y="872" font-family="Helvetica,Arial" font-size="20" fill="#fff">CSULB CS 343 · Week 2 · Requirements Engineering</text>
+
+</svg>
